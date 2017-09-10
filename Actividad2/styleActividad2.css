@@ -1,0 +1,277 @@
+div.row::after {
+  clear: both;
+  content: “”;
+  display: table;
+}
+
+div[class*=”col-”] {
+  float: left;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color:#000
+  top: 0;
+  left: 0;
+  background-image: url("Images/crowd.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+div.col1000 {
+  box-sizing: border-box;
+  max-width: 1000px;
+  margin: auto;
+  height: 1000px;
+  float left;
+}
+
+div.col-1-1 {
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+}
+
+div.col-100-7 {
+  box-sizing: border-box;
+  width: 14.285714%;
+  height: 35px;
+  background-color: red;
+  float: left;
+}
+
+div.col-1-5 {
+  box-sizing: border-box;
+  width: 20%;
+  float: left;
+}
+
+div.col-3-5 {
+  box-sizing: border-box;
+  width: 60%;
+  float: left;
+}
+
+div.col-1-3 {
+  box-sizing: border-box;
+  width: 33.33%;
+  float: left;
+}
+
+div.col-1-2 {
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+}
+
+p.menu {
+  color: black;
+  font-weight: bold;
+  font-family: arial;
+  font-size: 15px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-30%);
+}
+
+p.title {
+  margin: 5%;
+  text-align: center;
+  font-family: arial;
+  font-weight: bold;
+  color: black;
+}
+
+p.content {
+  margin: 5%;
+  font-size: 12px;
+  font-family: arial;
+  font-weight: bold;
+  color: black;
+}
+
+p.big {
+  margin: 5%;
+  font-size: 20px;
+  font-family: arial;
+  font-weight: bold;
+  color: white;
+}
+
+p.big2 {
+  margin: 5%;
+  text-align: center;
+  font-size: 20px;
+  font-family: arial;
+  font-weight: bold;
+  color: black;
+}
+
+div.col-bg {
+  padding: 1px;
+  background-color: red;
+  height: 40px;
+  background-color:rgba(255,0,0,0.7);
+  border-radius: 35px 35px 0px 0px;
+}
+
+img.left {
+  margin-top: -65px;
+  margin-left: 63px;
+  width:170px;
+  height: 280px;
+  transform: perspective(100px) rotateY(29deg) ;
+  float left;
+}
+
+img.right {
+  margin-top: -65px;
+  margin-left: -33px;
+  width:170px;
+  height: 280px;
+  transform: perspective(100px) rotateY(-29deg);
+  float left;
+}
+
+img.center {
+  margin-top: -25px;
+  width: 100%;
+  height: 100%;
+}
+
+img.rac {
+  position: absolute;
+  width: 11%;
+  transform: translateX(-950px) translateY(110px);
+}
+
+img.icon {
+  margin-left: 20px;
+  margin-top: 3px;
+  width: 30px;
+
+}
+
+div.textBig1 {
+  width:300px;
+  height: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  background-color: black;
+  transform: perspective(55px) rotateX(-25deg);
+}
+
+div.textBig2 {
+  width:300px;
+  height: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:150px;
+  background-color: white;
+  transform: perspective(55px) rotateX(25deg);
+}
+
+div.text1 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #ffffff;
+  border: 5px solid yellow;
+  border-radius: 35px;
+  background-color:rgba(255,255,255,0.6);
+  transform: perspective(300px) rotateY(20deg) skewY(12deg);
+  float: left;
+}
+
+div.text2 {
+  margin: 10px;
+  background-color: #ffffff;
+  border: 5px solid yellow;
+  border-radius: 35px;
+  background-color:rgba(255,255,255,0.6);
+  transform: perspective(300px) rotateY(20deg);
+  float: left;
+}
+
+div.text3 {
+  margin: 10px;
+  background-color: #ffffff;
+  border: 5px solid yellow;
+  border-radius: 35px;
+  background-color:rgba(255,255,255,0.6);
+  transform: perspective(300px) rotateY(20deg) skewY(-15deg);
+  float: left;
+}
+
+div.text1-2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #ffffff;
+  border: 5px solid yellow;
+  border-radius: 35px;
+  background-color:rgba(255,255,255,0.6);
+  transform: perspective(300px) rotateY(-20deg) skewY(-12deg);
+  float: left;
+}
+
+div.text2-2 {
+  margin: 10px;
+  background-color: #ffffff;
+  border: 5px solid yellow;
+  border-radius: 35px;
+  background-color:rgba(255,255,255,0.6);
+  transform: perspective(300px) rotateY(-20deg);
+  float: left;
+}
+
+div.text3-2 {
+  margin: 10px;
+  background-color: #ffffff;
+  border: 5px solid yellow;
+  border-radius: 35px;
+  background-color:rgba(255,255,255,0.6);
+  transform: perspective(300px) rotateY(-20deg) skewY(15deg);
+  float: left;
+}
+
+h.fest {
+  position: relative;
+  font-family: fantasy;
+  color: black;
+  font-size: 120px;
+  text-shadow: red 10px 5px 5px;
+  float: left;
+}
+
+h.year {
+  font-family: fantasy;
+  margin-left: 20px;
+  color: red;
+  font-size: 120px;
+  text-shadow: black 10px 5px 5px;
+  transform: rotate(90deg);
+  float: left;
+}
+
+figure {
+    display: inline-block;
+    margin: 20px;
+}
+
+figcaption {
+  margin-left: 180px;
+}
+
+figcaption p {
+  font-family: arial;
+  font-weight: bold;
+  font-size: 20px;
+}
