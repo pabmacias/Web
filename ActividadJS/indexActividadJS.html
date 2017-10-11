@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A simple callback example</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./assert.css">
+    <script src="./assert.js"></script>
+  </head>
+  <body>
+    <script>
+      var text = 'Domo arigato!';
+      report("Before defining functions");
+
+      function useless(ninjaCallback) {
+        report("In useless function");
+        return ninjaCallback(num);
+      }
+
+      function getText() {
+        report("In getText function");
+        return text;
+      }
+
+      report("Before making all the calls");
+
+      assert(useless(getText) === text, "The useless function works! " + text);
+
+      report("After the calls have been made");
+
+      var num = [6, 5, 1, 2, 2, 4, 1, 2, 3];
+
+      function buscaMayor(num) {
+        var temp = [num[0]];
+        var sequence = [];
+
+        for (var i = 1; i <= num.length; i++) {
+          if (num[i] >= num[i-1]) {
+            temp.push(num[i]);
+          } else {
+            if (temp.length >= sequence.length) {
+              sequence = temp;
+            }
+
+            temp = [num[i]]
+          }
+        }
+
+        return {sequence: sequence, l: sequence.length};
+      }
+
+      report(useless(buscaMayor).sequence);
+      report(useless(buscaMayor).l);
+
+    </script>
+  </body>
+</html>
